@@ -1,0 +1,2221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness One – Premium Gym in Makarpura, Vadodara</title>
+  <meta name="description"
+    content="Fitness One is Vadodara's premier gym located in Makarpura. Join now for expert training, modern equipment, and affordable membership plans starting from ₹999/month." />
+  <meta name="keywords"
+    content="gym Vadodara, fitness Makarpura, Fitness One gym, workout Vadodara, best gym Vadodara" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Preconnect Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+
+<body>
+
+  <!-- Progress Bar -->
+  <div class="progress-bar-top" id="progressBar"></div>
+
+  <!-- Floating CTA -->
+  <a href="#fees" class="floating-cta">
+    <span>💪</span> Join Now
+  </a>
+
+  <!-- ============================================
+     NAVBAR
+     ============================================ -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-logo">
+      <div class="logo-icon">F1</div>
+      <span class="logo-text">FITNESS <span>ONE</span></span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#workouts">Workouts</a></li>
+      <li><a href="#muscle-guide">Exercises</a></li>
+      <li><a href="#knowledge">Tips</a></li>
+      <li><a href="#fees">Fees</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact" class="nav-cta">Join Now</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+    <a href="#about" onclick="closeMobileNav()">About</a>
+    <a href="#workouts" onclick="closeMobileNav()">Workouts</a>
+    <a href="#muscle-guide" onclick="closeMobileNav()">Exercises</a>
+    <a href="#knowledge" onclick="closeMobileNav()">Tips</a>
+    <a href="#fees" onclick="closeMobileNav()">Fees</a>
+    <a href="#schedule" onclick="closeMobileNav()">Schedule</a>
+    <a href="#gallery" onclick="closeMobileNav()">Gallery</a>
+    <a href="#contact" onclick="closeMobileNav()">Contact</a>
+  </div>
+
+  <!-- ============================================
+     HERO SECTION
+     ============================================ -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+
+    <!-- Particles -->
+    <div class="particles" id="particles"></div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          NOW OPEN IN MAKARPURA, VADODARA
+        </div>
+
+        <h1 class="hero-title">
+          <span class="line1">TRANSFORM YOUR</span>
+          <span class="line2">BODY & MIND</span>
+        </h1>
+
+        <p class="hero-desc">
+          Welcome to <strong>Fitness One</strong> — Vadodara's premier fitness destination.
+          Expert trainers, state-of-the-art equipment, and a community that pushes you beyond your limits.
+          Your journey to a stronger, healthier you starts here.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#fees" class="btn-primary">🏋️ Start Your Journey</a>
+          <a href="#workouts" class="btn-secondary">▶ Watch Workouts</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">500+</span>
+            <span class="stat-label">Members</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Trainers</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">5★</span>
+            <span class="stat-label">Rating</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">24/7</span>
+            <span class="stat-label">Support</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero SVG Stick Figure Animation -->
+      <div class="hero-visual">
+        <div class="hero-figure-wrap">
+          <div class="hero-ring"></div>
+          <div class="hero-ring"></div>
+          <div class="hero-ring"></div>
+          <div class="hero-stick-figure">
+            <svg width="200" height="260" viewBox="0 0 200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Barbell -->
+              <rect x="10" y="45" width="180" height="10" rx="5" fill="#ff6b00" opacity="0.8" />
+              <rect x="10" y="38" width="20" height="24" rx="4" fill="#ff6b00" />
+              <rect x="170" y="38" width="20" height="24" rx="4" fill="#ff6b00" />
+              <!-- Weight plates -->
+              <rect x="5" y="34" width="12" height="32" rx="3" fill="#ff2d55" />
+              <rect x="183" y="34" width="12" height="32" rx="3" fill="#ff2d55" />
+
+              <!-- Stick person lifting weight -->
+              <g class="stick-person">
+                <!-- Head -->
+                <circle cx="100" cy="90" r="20" stroke="#ff6b00" stroke-width="3" fill="rgba(255,107,0,0.1)" />
+                <!-- Face -->
+                <circle cx="94" cy="87" r="3" fill="#ff6b00" />
+                <circle cx="106" cy="87" r="3" fill="#ff6b00" />
+                <path d="M 92 97 Q 100 104 108 97" stroke="#ff6b00" stroke-width="2.5" fill="none"
+                  stroke-linecap="round" />
+
+                <!-- Body -->
+                <line x1="100" y1="110" x2="100" y2="180" stroke="#ff6b00" stroke-width="4" stroke-linecap="round" />
+
+                <!-- Arms raised to barbell -->
+                <line x1="100" y1="125" x2="55" y2="65" stroke="#ff6b00" stroke-width="3.5" stroke-linecap="round" />
+                <line x1="100" y1="125" x2="145" y2="65" stroke="#ff6b00" stroke-width="3.5" stroke-linecap="round" />
+
+                <!-- Legs -->
+                <line x1="100" y1="180" x2="75" y2="230" stroke="#ff6b00" stroke-width="3.5" stroke-linecap="round" />
+                <line x1="100" y1="180" x2="125" y2="230" stroke="#ff6b00" stroke-width="3.5" stroke-linecap="round" />
+
+                <!-- Feet -->
+                <line x1="75" y1="230" x2="58" y2="238" stroke="#ff6b00" stroke-width="3" stroke-linecap="round" />
+                <line x1="125" y1="230" x2="142" y2="238" stroke="#ff6b00" stroke-width="3" stroke-linecap="round" />
+              </g>
+
+              <!-- Ground line -->
+              <line x1="20" y1="245" x2="180" y2="245" stroke="rgba(255,107,0,0.3)" stroke-width="2"
+                stroke-linecap="round" />
+
+              <!-- Energy lines -->
+              <line x1="30" y1="200" x2="20" y2="215" stroke="#ffcc00" stroke-width="2" opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="170" y1="200" x2="180" y2="215" stroke="#ffcc00" stroke-width="2" opacity="0.5"
+                stroke-linecap="round" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     ABOUT SECTION
+     ============================================ -->
+  <section id="about" style="padding: 6rem 2rem;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <h2>Welcome to<br><span style="color:var(--primary)">Fitness One</span></h2>
+          <p>
+            Founded with a passion for health and fitness, <strong>Fitness One</strong> in Makarpura, Vadodara is more
+            than just a gym — it's a lifestyle destination. We believe that fitness is not just about building a body,
+            but about building a stronger, more confident version of yourself.
+          </p>
+          <p>
+            Under the expert guidance of owner <strong>Dhrumil Pandya</strong>, our team of certified trainers designs
+            personalized programs that help you achieve your goals — whether you're a beginner or an elite athlete.
+          </p>
+          <ul class="about-features">
+            <li>State-of-the-art modern equipment</li>
+            <li>Expert certified personal trainers</li>
+            <li>Air-conditioned spacious workout areas</li>
+            <li>Separate male & female sections</li>
+            <li>Nutrition & diet consultation</li>
+            <li>Locker rooms & changing facilities</li>
+            <li>Cardio, strength & functional zones</li>
+            <li>Group fitness & Zumba classes</li>
+          </ul>
+        </div>
+
+        <div class="about-visual reveal">
+          <div class="gym-info-card">
+            <h3>📍 Our Details</h3>
+
+            <div class="info-row">
+              <div class="info-icon">🏋️</div>
+              <div class="info-detail">
+                <strong>Gym Name</strong>
+                <span>Fitness One</span>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <div class="info-icon">👤</div>
+              <div class="info-detail">
+                <strong>Owner</strong>
+                <span>Dhrumil Pandya</span>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <div class="info-icon">📍</div>
+              <div class="info-detail">
+                <strong>Address</strong>
+                <span>Makarpura, Vadodara, Gujarat</span>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <div class="info-icon">📞</div>
+              <div class="info-detail">
+                <strong>Phone</strong>
+                <span><a href="tel:9106725591" style="color:var(--text-light);text-decoration:none;">+91
+                    9106725591</a></span>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <div class="info-icon">✉️</div>
+              <div class="info-detail">
+                <strong>Email</strong>
+                <span><a href="mailto:dhrumilpandya09@gmail.com"
+                    style="color:var(--text-light);text-decoration:none;font-size:0.85rem;">dhrumilpandya09@gmail.com</a></span>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <div class="info-icon">🕐</div>
+              <div class="info-detail">
+                <strong>Timings</strong>
+                <span>5:00 AM – 10:00 PM (Mon–Sat)<br>6:00 AM – 8:00 PM (Sunday)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     WORKOUT ANIMATIONS SECTION
+     ============================================ -->
+  <section id="workouts" class="section-full">
+    <div class="section">
+      <h2 class="section-title reveal">2D Workout Animations</h2>
+      <p class="section-subtitle reveal">Watch, learn and master every exercise with our visual guides</p>
+
+      <div class="workouts-grid">
+
+        <!-- 1. BICEP CURL -->
+        <div class="workout-card reveal">
+          <div class="animation-stage">
+            <svg class="figure-bicep" width="180" height="200" viewBox="0 0 180 200" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <!-- Head -->
+              <circle cx="90" cy="30" r="18" stroke="#ff6b00" stroke-width="3" fill="rgba(255,107,0,0.1)" />
+              <!-- Body -->
+              <line x1="90" y1="48" x2="90" y2="120" stroke="#ff6b00" stroke-width="3.5" stroke-linecap="round" />
+              <!-- Left arm (static) -->
+              <line x1="90" y1="65" x2="55" y2="100" stroke="#ff6b00" stroke-width="3" stroke-linecap="round" />
+              <line x1="55" y1="100" x2="40" y2="125" stroke="#ff6b00" stroke-width="3" stroke-linecap="round" />
+              <!-- Right arm (animated curl) -->
+              <g class="arm-right">
+                <line x1="90" y1="65" x2="125" y2="100" stroke="#ff2d55" stroke-width="3" stroke-linecap="round" />
+                <line x1="125" y1="100" x2="140" y2="80" stroke="#ff2d55" stroke-width="3" stroke-linecap="round" />
+                <!-- Dumbbell -->
+                <rect x="135" y="72" width="18" height="6" rx="3" fill="#ff2d55" />
+                <rect x="133" y="69" width="5" height="12" rx="2" fill="#ffcc00" />
+                <rect x="150" y="69" width="5" height="12" rx="2" fill="#ffcc00" />
+              </g>
+              <!-- Legs -->
+              <line x1="90" y1="120" x2="70" y2="170" stroke="#ff6b00" stroke-width="3" stroke-linecap="round" />
+              <line x1="90" y1="120" x2="110" y2="170" stroke="#ff6b00" stroke-width="3" stroke-linecap="round" />
+              <!-- Feet -->
+              <line x1="70" y1="170" x2="55" y2="178" stroke="#ff6b00" stroke-width="2.5" stroke-linecap="round" />
+              <line x1="110" y1="170" x2="125" y2="178" stroke="#ff6b00" stroke-width="2.5" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3>Bicep Curl</h3>
+          <p>Isolates the bicep muscle. Keep elbows pinned at your sides, curl the weight up squeezing the bicep at the
+            top.</p>
+          <div class="workout-tag">💪 Arms</div>
+        </div>
+
+        <!-- 2. PUSH UP -->
+        <div class="workout-card reveal">
+          <div class="animation-stage">
+            <svg width="180" height="200" viewBox="0 0 180 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g class="figure-pushup">
+                <!-- Body horizontal -->
+                <line x1="30" y1="100" x2="130" y2="100" stroke="#ff6b00" stroke-width="3.5" stroke-linecap="round" />
+                <!-- Head -->
+                <circle cx="145" cy="95" r="15" stroke="#ff6b00" stroke-width="3" fill="rgba(255,107,0,0.1)" />
+                <!-- Arms -->
+                <line x1="55" y1="100" x2="55" y2="135" stroke="#ff6b00" stroke-width="3" stroke-linecap="round" />
+                <line x1="90" y1="100" x2="90" y2="135" stroke="#ff6b00" stroke-width="3" stroke-linecap="round" />
+                <!-- Legs -->
+                <line x1="30" y1="100" x2="25" y2="135" stroke="#ff6b00" stroke-width="3" stroke-linecap="round" />
+                <!-- Feet ground -->
+                <line x1="25" y1="135" x2="40" y2="140" stroke="#ff6b00" stroke-width="2.5" stroke-linecap="round" />
+                <line x1="55" y1="135" x2="55" y2="140" stroke="#ff6b00" stroke-width="2.5" stroke-linecap="round" />
+                <line x1="90" y1="135" x2="90" y2="140" stroke="#ff6b00" stroke-width="2.5" stroke-linecap="round" />
+                <!-- Ground -->
+                <line x1="10" y1="143" x2="170" y2="143" stroke="rgba(255,107,0,0.4)" stroke-width="2"
+                  stroke-linecap="round" />
+              </g>
+              <!-- Arrow indicating movement -->
+              <path d="M 90 160 L 90 175 L 85 168 M 90 175 L 95 168" stroke="#ffcc00" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3>Push Up</h3>
+          <p>Classic compound exercise targeting chest, triceps, and shoulders. Keep your core tight and body straight
+            throughout.</p>
+          <div class="workout-tag">🔥 Chest & Triceps</div>
+        </div>
+
+        <!-- 3. SQUAT -->
+        <div class="workout-card reveal">
+          <div class="animation-stage">
+            <svg width="180" height="200" viewBox="0 0 180 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Static upper body -->
+              <circle cx="90" cy="25" r="18" stroke="#ff6b00" stroke-width="3" fill="rgba(255,107,0,0.1)" />
+              <!-- Arms out for balance -->
+              <line x1="90" y1="60" x2="50" y2="75" stroke="#ff6b00" stroke-width="3" stroke-linecap="round" />
+              <line x1="90" y1="60" x2="130" y2="75" stroke="#ff6b00" stroke-width="3" stroke-linecap="round" />
+              <!-- Squat body (animated) -->
+              <g class="figure-squat">
+                <!-- Torso -->
+                <line x1="90" y1="43" x2="90" y2="100" stroke="#ff6b00" stroke-width="3.5" stroke-linecap="round" />
+                <!-- Thighs bent -->
+                <line x1="90" y1="100" x2="60" y2="135" stroke="#ff2d55" stroke-width="3.5" stroke-linecap="round" />
+                <line x1="90" y1="100" x2="120" y2="135" stroke="#ff2d55" stroke-width="3.5" stroke-linecap="round" />
+                <!-- Shins -->
+                <line x1="60" y1="135" x2="55" y2="170" stroke="#ff6b00" stroke-width="3" stroke-linecap="round" />
+                <line x1="120" y1="135" x2="125" y2="170" stroke="#ff6b00" stroke-width="3" stroke-linecap="round" />
+                <!-- Feet -->
+                <line x1="55" y1="170" x2="40" y2="178" stroke="#ff6b00" stroke-width="2.5" stroke-linecap="round" />
+                <line x1="125" y1="170" x2="140" y2="178" stroke="#ff6b00" stroke-width="2.5" stroke-linecap="round" />
+              </g>
+              <!-- Ground -->
+              <line x1="20" y1="182" x2="160" y2="182" stroke="rgba(255,107,0,0.4)" stroke-width="2" />
+            </svg>
+          </div>
+          <h3>Squat</h3>
+          <p>The king of leg exercises. Works quadriceps, hamstrings, glutes. Keep your back straight and knees behind
+            toes.</p>
+          <div class="workout-tag">🦵 Legs & Glutes</div>
+        </div>
+
+        <!-- 4. JUMPING JACK -->
+        <div class="workout-card reveal">
+          <div class="animation-stage">
+            <svg class="figure-jack" width="180" height="200" viewBox="0 0 180 200" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <!-- Head -->
+              <circle cx="90" cy="28" r="18" stroke="#ff6b00" stroke-width="3" fill="rgba(255,107,0,0.1)" />
+              <!-- Body -->
+              <line x1="90" y1="46" x2="90" y2="120" stroke="#ff6b00" stroke-width="3.5" stroke-linecap="round" />
+              <!-- Arms animated -->
+              <g class="arms-jack">
+                <line x1="90" y1="70" x2="35" y2="40" stroke="#ff2d55" stroke-width="3" stroke-linecap="round" />
+                <line x1="90" y1="70" x2="145" y2="40" stroke="#ff2d55" stroke-width="3" stroke-linecap="round" />
+              </g>
+              <!-- Legs animated -->
+              <g class="legs-jack">
+                <line x1="90" y1="120" x2="50" y2="170" stroke="#ff6b00" stroke-width="3.5" stroke-linecap="round" />
+                <line x1="90" y1="120" x2="130" y2="170" stroke="#ff6b00" stroke-width="3.5" stroke-linecap="round" />
+                <line x1="50" y1="170" x2="38" y2="180" stroke="#ff6b00" stroke-width="2.5" stroke-linecap="round" />
+                <line x1="130" y1="170" x2="142" y2="180" stroke="#ff6b00" stroke-width="2.5" stroke-linecap="round" />
+              </g>
+              <!-- Ground -->
+              <line x1="20" y1="185" x2="160" y2="185" stroke="rgba(255,107,0,0.3)" stroke-width="2" />
+              <!-- Energy dots -->
+              <circle cx="35" cy="185" r="4" fill="#ffcc00" opacity="0.6" />
+              <circle cx="145" cy="185" r="4" fill="#ffcc00" opacity="0.6" />
+            </svg>
+          </div>
+          <h3>Jumping Jack</h3>
+          <p>Full-body cardio exercise that raises heart rate fast. Great for warm-up, improving coordination and
+            burning calories.</p>
+          <div class="workout-tag">⚡ Cardio & Full Body</div>
+        </div>
+
+        <!-- 5. DEADLIFT -->
+        <div class="workout-card reveal">
+          <div class="animation-stage">
+            <svg width="180" height="200" viewBox="0 0 180 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Barbell on ground -->
+              <rect x="20" y="155" width="140" height="8" rx="4" fill="#ff6b00" opacity="0.8" />
+              <rect x="20" y="148" width="15" height="22" rx="3" fill="#ffcc00" />
+              <rect x="145" y="148" width="15" height="22" rx="3" fill="#ffcc00" />
+              <rect x="15" y="144" width="10" height="30" rx="2" fill="#ff2d55" />
+              <rect x="155" y="144" width="10" height="30" rx="2" fill="#ff2d55" />
+
+              <!-- Person bending to lift -->
+              <g class="figure-deadlift">
+                <!-- Head -->
+                <circle cx="90" cy="52" r="18" stroke="#ff6b00" stroke-width="3" fill="rgba(255,107,0,0.1)" />
+                <!-- Torso (bent forward) -->
+                <line x1="90" y1="70" x2="90" y2="130" stroke="#ff6b00" stroke-width="3.5" stroke-linecap="round" />
+                <!-- Arms reaching down -->
+                <line x1="90" y1="90" x2="60" y2="145" stroke="#ff6b00" stroke-width="3" stroke-linecap="round" />
+                <line x1="90" y1="90" x2="120" y2="145" stroke="#ff6b00" stroke-width="3" stroke-linecap="round" />
+                <!-- Legs bent -->
+                <line x1="90" y1="130" x2="70" y2="165" stroke="#ff2d55" stroke-width="3.5" stroke-linecap="round" />
+                <line x1="90" y1="130" x2="110" y2="165" stroke="#ff2d55" stroke-width="3.5" stroke-linecap="round" />
+                <line x1="70" y1="165" x2="60" y2="163" stroke="#ff6b00" stroke-width="2.5" stroke-linecap="round" />
+                <line x1="110" y1="165" x2="120" y2="163" stroke="#ff6b00" stroke-width="2.5" stroke-linecap="round" />
+              </g>
+            </svg>
+          </div>
+          <h3>Deadlift</h3>
+          <p>The ultimate compound lift. Builds strength in your back, glutes, hamstrings, and core. Focus on form over
+            weight.</p>
+          <div class="workout-tag">💪 Full Body Strength</div>
+        </div>
+
+        <!-- 6. PLANK -->
+        <div class="workout-card reveal">
+          <div class="animation-stage">
+            <svg width="180" height="200" viewBox="0 0 180 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g class="figure-plank">
+                <!-- Body in plank position -->
+                <line x1="25" y1="110" x2="145" y2="110" stroke="#ff6b00" stroke-width="4" stroke-linecap="round" />
+                <!-- Head -->
+                <circle cx="155" cy="103" r="14" stroke="#ff6b00" stroke-width="3" fill="rgba(255,107,0,0.1)" />
+                <!-- Forearms on ground -->
+                <line x1="60" y1="110" x2="60" y2="130" stroke="#ff6b00" stroke-width="3.5" stroke-linecap="round" />
+                <line x1="100" y1="110" x2="100" y2="130" stroke="#ff6b00" stroke-width="3.5" stroke-linecap="round" />
+                <!-- Feet on ground -->
+                <line x1="25" y1="110" x2="20" y2="130" stroke="#ff6b00" stroke-width="3" stroke-linecap="round" />
+                <!-- Ground -->
+                <line x1="10" y1="130" x2="170" y2="130" stroke="rgba(255,107,0,0.4)" stroke-width="2.5"
+                  stroke-linecap="round" />
+                <!-- Core highlight -->
+                <line x1="80" y1="105" x2="110" y2="105" stroke="#ffcc00" stroke-width="2" opacity="0.6"
+                  stroke-dasharray="4 3" />
+              </g>
+              <!-- Timer circles -->
+              <circle cx="90" cy="165" r="18" stroke="rgba(255,107,0,0.3)" stroke-width="2" fill="none" />
+              <text x="90" y="170" text-anchor="middle" font-family="Orbitron, sans-serif" font-size="11"
+                fill="#ff6b00">30s</text>
+            </svg>
+          </div>
+          <h3>Plank</h3>
+          <p>The ultimate core stability exercise. Hold a rigid position to strengthen your abs, back, and stabilizer
+            muscles.</p>
+          <div class="workout-tag">🧱 Core & Stability</div>
+        </div>
+
+        <!-- 7. RUNNING -->
+        <div class="workout-card reveal">
+          <div class="animation-stage">
+            <svg width="180" height="200" viewBox="0 0 180 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Running figure -->
+              <!-- Head -->
+              <circle cx="90" cy="32" r="18" stroke="#ff6b00" stroke-width="3" fill="rgba(255,107,0,0.1)" />
+              <!-- Torso (slight lean forward) -->
+              <line x1="90" y1="50" x2="85" y2="120" stroke="#ff6b00" stroke-width="3.5" stroke-linecap="round" />
+              <!-- Front arm -->
+              <line x1="88" y1="70" x2="60" y2="90" stroke="#ff2d55" stroke-width="3" stroke-linecap="round"
+                class="arm-front-run" />
+              <!-- Back arm -->
+              <line x1="88" y1="70" x2="115" y2="55" stroke="#ff6b00" stroke-width="3" stroke-linecap="round"
+                class="arm-back-run" />
+              <!-- Front leg -->
+              <line x1="85" y1="120" x2="55" y2="155" stroke="#ff2d55" stroke-width="3.5" stroke-linecap="round"
+                class="leg-front-run" />
+              <line x1="55" y1="155" x2="40" y2="178" stroke="#ff2d55" stroke-width="3" stroke-linecap="round" />
+              <!-- Back leg -->
+              <line x1="85" y1="120" x2="110" y2="148" stroke="#ff6b00" stroke-width="3.5" stroke-linecap="round"
+                class="leg-back-run" />
+              <line x1="110" y1="148" x2="130" y2="130" stroke="#ff6b00" stroke-width="3" stroke-linecap="round" />
+              <!-- Ground -->
+              <line x1="10" y1="182" x2="170" y2="182" stroke="rgba(255,107,0,0.3)" stroke-width="2" />
+              <!-- Speed lines -->
+              <line x1="10" y1="90" x2="35" y2="90" stroke="#ffcc00" stroke-width="2" opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="10" y1="100" x2="28" y2="100" stroke="#ffcc00" stroke-width="1.5" opacity="0.4"
+                stroke-linecap="round" />
+              <line x1="10" y1="110" x2="32" y2="110" stroke="#ffcc00" stroke-width="2" opacity="0.5"
+                stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3>Running / Cardio</h3>
+          <p>Builds endurance, burns fat, and improves cardiovascular health. Start slow and gradually increase pace and
+            distance.</p>
+          <div class="workout-tag">🏃 Cardio & Endurance</div>
+        </div>
+
+        <!-- 8. SHOULDER PRESS -->
+        <div class="workout-card reveal">
+          <div class="animation-stage">
+            <svg width="180" height="200" viewBox="0 0 180 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Head -->
+              <circle cx="90" cy="35" r="18" stroke="#ff6b00" stroke-width="3" fill="rgba(255,107,0,0.1)" />
+              <!-- Body (seated) -->
+              <line x1="90" y1="53" x2="90" y2="130" stroke="#ff6b00" stroke-width="3.5" stroke-linecap="round" />
+              <!-- Seat -->
+              <rect x="60" y="128" width="60" height="10" rx="5" fill="rgba(255,107,0,0.2)" stroke="#ff6b00"
+                stroke-width="1.5" />
+              <!-- Arms pressing up (animated) -->
+              <g class="arms-up">
+                <!-- Left arm -->
+                <line x1="90" y1="75" x2="50" y2="60" stroke="#ff2d55" stroke-width="3.5" stroke-linecap="round" />
+                <line x1="50" y1="60" x2="35" y2="30" stroke="#ff2d55" stroke-width="3" stroke-linecap="round" />
+                <!-- Right arm -->
+                <line x1="90" y1="75" x2="130" y2="60" stroke="#ff2d55" stroke-width="3.5" stroke-linecap="round" />
+                <line x1="130" y1="60" x2="145" y2="30" stroke="#ff2d55" stroke-width="3" stroke-linecap="round" />
+                <!-- Barbell across -->
+                <rect x="28" y="22" width="124" height="8" rx="4" fill="#ff6b00" opacity="0.9" />
+                <rect x="20" y="16" width="12" height="20" rx="3" fill="#ffcc00" />
+                <rect x="148" y="16" width="12" height="20" rx="3" fill="#ffcc00" />
+              </g>
+              <!-- Legs -->
+              <line x1="80" y1="138" x2="70" y2="175" stroke="#ff6b00" stroke-width="3" stroke-linecap="round" />
+              <line x1="100" y1="138" x2="110" y2="175" stroke="#ff6b00" stroke-width="3" stroke-linecap="round" />
+              <line x1="70" y1="175" x2="55" y2="183" stroke="#ff6b00" stroke-width="2.5" stroke-linecap="round" />
+              <line x1="110" y1="175" x2="125" y2="183" stroke="#ff6b00" stroke-width="2.5" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3>Shoulder Press</h3>
+          <p>Develops the deltoid muscles and upper body strength. Press overhead from shoulder height, fully extending
+            arms.</p>
+          <div class="workout-tag">🏋️ Shoulders & Arms</div>
+        </div>
+
+        <!-- 9. SIT UP / CRUNCH -->
+        <div class="workout-card reveal">
+          <div class="animation-stage">
+            <svg width="180" height="200" viewBox="0 0 180 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Legs on ground -->
+              <line x1="55" y1="160" x2="90" y2="140" stroke="#ff6b00" stroke-width="3.5" stroke-linecap="round" />
+              <line x1="90" y1="140" x2="125" y2="160" stroke="#ff6b00" stroke-width="3.5" stroke-linecap="round" />
+              <!-- Feet -->
+              <line x1="55" y1="160" x2="35" y2="165" stroke="#ff6b00" stroke-width="2.5" stroke-linecap="round" />
+              <line x1="125" y1="160" x2="145" y2="165" stroke="#ff6b00" stroke-width="2.5" stroke-linecap="round" />
+              <!-- Ground -->
+              <line x1="10" y1="168" x2="170" y2="168" stroke="rgba(255,107,0,0.4)" stroke-width="2" />
+              <!-- Animated upper body (sit up) -->
+              <g class="figure-situp">
+                <!-- Hip point (pivot) -->
+                <circle cx="90" cy="140" r="5" fill="#ff6b00" />
+                <!-- Torso -->
+                <line x1="90" y1="140" x2="90" y2="85" stroke="#ff6b00" stroke-width="3.5" stroke-linecap="round" />
+                <!-- Head -->
+                <circle cx="90" cy="67" r="18" stroke="#ff6b00" stroke-width="3" fill="rgba(255,107,0,0.1)" />
+                <!-- Arms behind head -->
+                <line x1="90" y1="100" x2="65" y2="90" stroke="#ff2d55" stroke-width="3" stroke-linecap="round" />
+                <line x1="90" y1="100" x2="115" y2="90" stroke="#ff2d55" stroke-width="3" stroke-linecap="round" />
+                <line x1="65" y1="90" x2="73" y2="73" stroke="#ff2d55" stroke-width="2.5" stroke-linecap="round" />
+                <line x1="115" y1="90" x2="107" y2="73" stroke="#ff2d55" stroke-width="2.5" stroke-linecap="round" />
+              </g>
+            </svg>
+          </div>
+          <h3>Sit Up / Crunch</h3>
+          <p>Core exercise that targets your rectus abdominis. Control the movement both up and down for maximum
+            results.</p>
+          <div class="workout-tag">🧠 Core & Abs</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     GYM FEATURES / AMENITIES
+     ============================================ -->
+  <section class="section-full features-section">
+    <div class="section">
+      <h2 class="section-title reveal">World-Class Facilities</h2>
+      <p class="section-subtitle reveal">Everything you need for the perfect workout experience</p>
+
+      <div class="features-grid">
+        <div class="feature-item reveal">
+          <span class="feature-icon">🏋️</span>
+          <h4>Free Weights Zone</h4>
+          <p>Complete range of dumbbells, barbells, and plates for all strength training needs.</p>
+        </div>
+        <div class="feature-item reveal">
+          <span class="feature-icon">🚴</span>
+          <h4>Cardio Equipment</h4>
+          <p>Treadmills, cycles, ellipticals, and rowing machines for cardiovascular fitness.</p>
+        </div>
+        <div class="feature-item reveal">
+          <span class="feature-icon">🧘</span>
+          <h4>Yoga & Stretch Area</h4>
+          <p>Dedicated space for yoga, flexibility, and mindfulness sessions daily.</p>
+        </div>
+        <div class="feature-item reveal">
+          <span class="feature-icon">❄️</span>
+          <h4>Air-Conditioned</h4>
+          <p>Fully air-conditioned gym floors for a comfortable workout in all seasons.</p>
+        </div>
+        <div class="feature-item reveal">
+          <span class="feature-icon">🚿</span>
+          <h4>Locker Rooms</h4>
+          <p>Clean locker rooms with showers and changing facilities for members.</p>
+        </div>
+        <div class="feature-item reveal">
+          <span class="feature-icon">🥤</span>
+          <h4>Protein Bar</h4>
+          <p>In-house nutrition bar serving protein shakes, health drinks, and snacks.</p>
+        </div>
+        <div class="feature-item reveal">
+          <span class="feature-icon">📱</span>
+          <h4>Diet Consultation</h4>
+          <p>Expert diet and nutrition consultation tailored to your fitness goals.</p>
+        </div>
+        <div class="feature-item reveal">
+          <span class="feature-icon">🎵</span>
+          <h4>High-Energy Music</h4>
+          <p>Energizing playlist and premium sound system to keep you pumped throughout.</p>
+        </div>
+        <div class="feature-item reveal">
+          <span class="feature-icon">📷</span>
+          <h4>CCTV Security</h4>
+          <p>24/7 CCTV surveillance for your safety and security during workouts.</p>
+        </div>
+        <div class="feature-item reveal">
+          <span class="feature-icon">🏆</span>
+          <h4>Expert Trainers</h4>
+          <p>Certified personal trainers with years of experience in fitness coaching.</p>
+        </div>
+        <div class="feature-item reveal">
+          <span class="feature-icon">📊</span>
+          <h4>Body Analysis</h4>
+          <p>Body composition analysis to track your fat percentage, muscle mass, and progress.</p>
+        </div>
+        <div class="feature-item reveal">
+          <span class="feature-icon">🌐</span>
+          <h4>Free Wi-Fi</h4>
+          <p>High-speed Wi-Fi available throughout the gym for all members.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     MUSCLE GROUP EXERCISE GUIDE
+     ============================================ -->
+  <section id="muscle-guide" style="padding: 6rem 2rem; background: var(--bg-dark);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <h2 class="section-title reveal">Exercise Library</h2>
+      <p class="section-subtitle reveal">Complete exercise guide by muscle group</p>
+
+      <div class="muscle-tabs">
+        <button class="muscle-tab active" onclick="showMuscle('chest')">Chest</button>
+        <button class="muscle-tab" onclick="showMuscle('back')">Back</button>
+        <button class="muscle-tab" onclick="showMuscle('shoulders')">Shoulders</button>
+        <button class="muscle-tab" onclick="showMuscle('arms')">Arms</button>
+        <button class="muscle-tab" onclick="showMuscle('legs')">Legs</button>
+        <button class="muscle-tab" onclick="showMuscle('core')">Core</button>
+        <button class="muscle-tab" onclick="showMuscle('cardio')">Cardio</button>
+      </div>
+
+      <!-- CHEST -->
+      <div class="muscle-content active" id="muscle-chest">
+        <div class="exercise-card">
+          <h4>Bench Press</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">4 Sets</span>
+            <span class="exercise-tag">8–12 Reps</span>
+            <span class="exercise-tag">Compound</span>
+          </div>
+          <p>Lie on bench, lower barbell to chest with controlled movement, press back up. Primary chest builder. Keep
+            feet flat, back slightly arched.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Incline Dumbbell Press</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">10–12 Reps</span>
+            <span class="exercise-tag">Upper Chest</span>
+          </div>
+          <p>Set bench to 30–45°. Targets upper chest. Press dumbbells up and inward, squeezing at the top of movement.
+          </p>
+        </div>
+        <div class="exercise-card">
+          <h4>Cable Chest Fly</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">12–15 Reps</span>
+            <span class="exercise-tag">Isolation</span>
+          </div>
+          <p>Stand in center of cable machine. Bring handles together in a hugging motion. Great for chest stretch and
+            squeeze.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Push Up Variations</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">To Failure</span>
+            <span class="exercise-tag">Bodyweight</span>
+          </div>
+          <p>Wide grip for chest, narrow for triceps, elevated feet for upper chest. Excellent muscle builder with no
+            equipment needed.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Chest Dip</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">8–10 Reps</span>
+            <span class="exercise-tag">Compound</span>
+          </div>
+          <p>Lean forward 45° on parallel bars to target lower chest. Lower slowly, push up explosively. Can add weight
+            with belt.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Decline Bench Press</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">10–12 Reps</span>
+            <span class="exercise-tag">Lower Chest</span>
+          </div>
+          <p>Targets lower chest region. Set bench at negative angle. Can typically press more weight than flat bench.
+          </p>
+        </div>
+      </div>
+
+      <!-- BACK -->
+      <div class="muscle-content" id="muscle-back">
+        <div class="exercise-card">
+          <h4>Pull Up / Chin Up</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">4 Sets</span>
+            <span class="exercise-tag">6–10 Reps</span>
+            <span class="exercise-tag">Compound</span>
+          </div>
+          <p>King of back exercises. Wide grip targets lats width. Chin-up (underhand) adds more bicep. Aim for full
+            range of motion.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Bent-over Barbell Row</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">4 Sets</span>
+            <span class="exercise-tag">8–12 Reps</span>
+            <span class="exercise-tag">Mass Builder</span>
+          </div>
+          <p>Hinge at hips, keep back straight. Pull bar to lower chest. Develops back thickness and overall strength.
+          </p>
+        </div>
+        <div class="exercise-card">
+          <h4>Lat Pulldown</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">10–12 Reps</span>
+            <span class="exercise-tag">Width</span>
+          </div>
+          <p>Cable machine exercise. Pull bar to upper chest, elbows pointing down. Excellent for building lat width.
+          </p>
+        </div>
+        <div class="exercise-card">
+          <h4>Deadlift</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">5–8 Reps</span>
+            <span class="exercise-tag">Full Body</span>
+          </div>
+          <p>The most complete strength exercise. Works entire posterior chain. Start light and perfect your form before
+            adding weight.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Seated Cable Row</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">10–12 Reps</span>
+            <span class="exercise-tag">Thickness</span>
+          </div>
+          <p>Sit tall, pull handles to abdomen, squeeze shoulder blades together. Excellent for mid-back development.
+          </p>
+        </div>
+        <div class="exercise-card">
+          <h4>Face Pull</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">15–20 Reps</span>
+            <span class="exercise-tag">Rear Delt</span>
+          </div>
+          <p>Cable at eye level, pull toward face with elbows flared out. Crucial for shoulder health and rear delt
+            development.</p>
+        </div>
+      </div>
+
+      <!-- SHOULDERS -->
+      <div class="muscle-content" id="muscle-shoulders">
+        <div class="exercise-card">
+          <h4>Overhead Press</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">4 Sets</span>
+            <span class="exercise-tag">6–10 Reps</span>
+            <span class="exercise-tag">Mass Builder</span>
+          </div>
+          <p>Standing or seated, press barbell/dumbbells overhead. Builds overall shoulder mass and strength.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Lateral Raise</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">4 Sets</span>
+            <span class="exercise-tag">12–15 Reps</span>
+            <span class="exercise-tag">Side Delts</span>
+          </div>
+          <p>Raise dumbbells to sides to shoulder height. Isolation movement for lateral deltoid width. Use controlled
+            tempo.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Front Raise</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">12–15 Reps</span>
+            <span class="exercise-tag">Front Delts</span>
+          </div>
+          <p>Raise dumbbells to front, alternate arms. Targets front deltoids. Avoid swinging the weight.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Arnold Press</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">10–12 Reps</span>
+            <span class="exercise-tag">All 3 Heads</span>
+          </div>
+          <p>Named after Arnold Schwarzenegger. Rotate dumbbells as you press. Hits all 3 heads of the deltoid.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Shrugs</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">15 Reps</span>
+            <span class="exercise-tag">Traps</span>
+          </div>
+          <p>Shrug shoulders up toward ears. Builds trapezius muscles for a powerful upper back appearance.</p>
+        </div>
+      </div>
+
+      <!-- ARMS -->
+      <div class="muscle-content" id="muscle-arms">
+        <div class="exercise-card">
+          <h4>Barbell Curl</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">10–12 Reps</span>
+            <span class="exercise-tag">Biceps</span>
+          </div>
+          <p>Classic bicep builder. Keep elbows fixed at sides. Full range of motion from fully extended to peak
+            contraction.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Hammer Curl</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">12 Reps</span>
+            <span class="exercise-tag">Brachialis</span>
+          </div>
+          <p>Neutral grip curl. Targets brachialis and brachioradialis for overall arm thickness and forearm
+            development.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Skull Crusher</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">10–12 Reps</span>
+            <span class="exercise-tag">Triceps</span>
+          </div>
+          <p>Lie on bench, lower barbell toward forehead. Excellent tricep isolation exercise. Keep upper arms still.
+          </p>
+        </div>
+        <div class="exercise-card">
+          <h4>Tricep Pushdown</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">4 Sets</span>
+            <span class="exercise-tag">12–15 Reps</span>
+            <span class="exercise-tag">Triceps</span>
+          </div>
+          <p>Cable pushdown with rope or bar. Keep elbows tight to sides. Squeeze triceps at the bottom of movement.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Concentration Curl</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">12 Reps</span>
+            <span class="exercise-tag">Bicep Peak</span>
+          </div>
+          <p>Seated, elbow on inner thigh. Maximum isolation for bicep peak development. Great mind-muscle connection.
+          </p>
+        </div>
+      </div>
+
+      <!-- LEGS -->
+      <div class="muscle-content" id="muscle-legs">
+        <div class="exercise-card">
+          <h4>Back Squat</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">4 Sets</span>
+            <span class="exercise-tag">6–10 Reps</span>
+            <span class="exercise-tag">King of Legs</span>
+          </div>
+          <p>Bar across upper back, squat to parallel or below. The most effective leg mass builder. Proper form is
+            critical.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Romanian Deadlift</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">10–12 Reps</span>
+            <span class="exercise-tag">Hamstrings</span>
+          </div>
+          <p>Hip hinge with slight knee bend. Stretches and strengthens hamstrings. Feel the pull in the back of the
+            legs.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Leg Press</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">4 Sets</span>
+            <span class="exercise-tag">10–15 Reps</span>
+            <span class="exercise-tag">Quads</span>
+          </div>
+          <p>Machine exercise. Foot placement determines target: high and wide for glutes, low and narrow for quads.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Walking Lunges</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">20 Steps</span>
+            <span class="exercise-tag">Glutes & Quads</span>
+          </div>
+          <p>Step forward, lower back knee to floor, drive up. Excellent for building functional leg strength and
+            balance.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Calf Raise</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">4 Sets</span>
+            <span class="exercise-tag">15–20 Reps</span>
+            <span class="exercise-tag">Calves</span>
+          </div>
+          <p>Rise on toes, lower slowly. Standing targets gastrocnemius; seated targets soleus. Full range of motion
+            essential.</p>
+        </div>
+      </div>
+
+      <!-- CORE -->
+      <div class="muscle-content" id="muscle-core">
+        <div class="exercise-card">
+          <h4>Plank Variations</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">30–60 sec</span>
+            <span class="exercise-tag">Full Core</span>
+          </div>
+          <p>Standard, side, and reverse planks. Isometric exercise that targets all core muscles simultaneously.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Hanging Leg Raise</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">12–15 Reps</span>
+            <span class="exercise-tag">Lower Abs</span>
+          </div>
+          <p>Hang from bar, raise legs to 90°. Highly effective for lower abdominal region. Control the lowering phase.
+          </p>
+        </div>
+        <div class="exercise-card">
+          <h4>Russian Twist</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">20 Reps</span>
+            <span class="exercise-tag">Obliques</span>
+          </div>
+          <p>Seated, lean back slightly, rotate torso side to side. Targets obliques for a defined waistline.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Cable Crunch</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">15 Reps</span>
+            <span class="exercise-tag">Upper Abs</span>
+          </div>
+          <p>Kneeling with cable overhead, crunch down. Allows progressive overload on abs unlike regular crunches.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Mountain Climber</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">30 sec</span>
+            <span class="exercise-tag">Cardio Core</span>
+          </div>
+          <p>In plank position, alternately drive knees to chest. Great cardio and core exercise combined.</p>
+        </div>
+      </div>
+
+      <!-- CARDIO -->
+      <div class="muscle-content" id="muscle-cardio">
+        <div class="exercise-card">
+          <h4>Treadmill HIIT</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">20 min</span>
+            <span class="exercise-tag">High Intensity</span>
+            <span class="exercise-tag">Fat Burn</span>
+          </div>
+          <p>Alternate 30 sec sprint / 60 sec walk. Burns more fat in less time than steady-state cardio.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Cycling</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">30–45 min</span>
+            <span class="exercise-tag">Low Impact</span>
+            <span class="exercise-tag">Endurance</span>
+          </div>
+          <p>Low-impact cardio that's easy on joints. Great for recovery days or longer steady-state sessions.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Jump Rope</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">10–15 min</span>
+            <span class="exercise-tag">Full Body</span>
+            <span class="exercise-tag">Coordination</span>
+          </div>
+          <p>Burns ~200 calories in 15 minutes. Improves coordination, timing, and cardiovascular fitness rapidly.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Rowing Machine</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">20 min</span>
+            <span class="exercise-tag">Full Body</span>
+            <span class="exercise-tag">Power</span>
+          </div>
+          <p>Works 86% of muscles in the body. Drive with legs first, then back, then arms. Perfect full-body cardio.
+          </p>
+        </div>
+        <div class="exercise-card">
+          <h4>Burpees</h4>
+          <div class="exercise-meta">
+            <span class="exercise-tag">3 Sets</span>
+            <span class="exercise-tag">10–15 Reps</span>
+            <span class="exercise-tag">HIIT</span>
+          </div>
+          <p>Squat down, jump feet back to plank, push up, jump up with arms raised. One of the most calorie-burning
+            exercises.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     GYM KNOWLEDGE & TIPS SECTION
+     ============================================ -->
+  <section id="knowledge" class="section-full">
+    <div class="section">
+      <h2 class="section-title reveal">Gym Knowledge Hub</h2>
+      <p class="section-subtitle reveal">Expert tips and essential knowledge for your fitness journey</p>
+
+      <div class="knowledge-grid">
+        <div class="know-card reveal">
+          <span class="know-number">01</span>
+          <span class="know-icon">🔥</span>
+          <h4>Warm Up Always</h4>
+          <p>Always spend 5–10 minutes warming up before intense exercise. Dynamic stretches, light cardio, and mobility
+            drills prevent injury and improve performance.</p>
+        </div>
+        <div class="know-card reveal">
+          <span class="know-number">02</span>
+          <span class="know-icon">💧</span>
+          <h4>Stay Hydrated</h4>
+          <p>Drink at least 3–4 liters of water daily. During workouts, drink 200–300ml every 20 minutes. Dehydration
+            reduces performance by up to 20%.</p>
+        </div>
+        <div class="know-card reveal">
+          <span class="know-number">03</span>
+          <span class="know-icon">😴</span>
+          <h4>Rest & Recovery</h4>
+          <p>Muscles grow during rest, not during workouts. Get 7–9 hours of quality sleep. Take at least 1–2 rest days
+            per week for optimal recovery.</p>
+        </div>
+        <div class="know-card reveal">
+          <span class="know-number">04</span>
+          <span class="know-icon">🥩</span>
+          <h4>Protein Intake</h4>
+          <p>Consume 1.6–2.2g of protein per kg of body weight daily. Best sources: eggs, chicken, paneer, dal, whey
+            protein. Spread intake across all meals.</p>
+        </div>
+        <div class="know-card reveal">
+          <span class="know-number">05</span>
+          <span class="know-icon">📈</span>
+          <h4>Progressive Overload</h4>
+          <p>Gradually increase weight, reps, or sets over time. This is the fundamental principle for continuous muscle
+            growth and strength gains.</p>
+        </div>
+        <div class="know-card reveal">
+          <span class="know-number">06</span>
+          <span class="know-icon">🧠</span>
+          <h4>Mind-Muscle Connection</h4>
+          <p>Focus on feeling the target muscle working during each rep. Research shows this increases muscle activation
+            by up to 35% compared to mindless lifting.</p>
+        </div>
+        <div class="know-card reveal">
+          <span class="know-number">07</span>
+          <span class="know-icon">📐</span>
+          <h4>Proper Form First</h4>
+          <p>Never sacrifice form for weight. Wrong technique leads to injuries. Master the movement with lighter weight
+            before adding load to your exercises.</p>
+        </div>
+        <div class="know-card reveal">
+          <span class="know-number">08</span>
+          <span class="know-icon">🍽️</span>
+          <h4>Pre & Post Workout Nutrition</h4>
+          <p>Pre-workout: complex carbs + protein 1–2 hours before. Post-workout: fast-digesting protein + simple carbs
+            within 30 minutes after training.</p>
+        </div>
+        <div class="know-card reveal">
+          <span class="know-number">09</span>
+          <span class="know-icon">⏱️</span>
+          <h4>Workout Duration</h4>
+          <p>Optimal workout sessions are 45–75 minutes. Longer sessions lead to hormonal decline and diminishing
+            returns. Quality beats quantity every time.</p>
+        </div>
+        <div class="know-card reveal">
+          <span class="know-number">10</span>
+          <span class="know-icon">🎯</span>
+          <h4>Set Smart Goals</h4>
+          <p>Set SMART goals: Specific, Measurable, Achievable, Relevant, Time-bound. Track your workouts in a journal
+            or app for continuous improvement.</p>
+        </div>
+        <div class="know-card reveal">
+          <span class="know-number">11</span>
+          <span class="know-icon">🔄</span>
+          <h4>Vary Your Workouts</h4>
+          <p>Change your routine every 4–6 weeks to prevent plateaus and keep motivation high. Try different exercises,
+            rep ranges, and workout styles.</p>
+        </div>
+        <div class="know-card reveal">
+          <span class="know-number">12</span>
+          <span class="know-icon">🚫</span>
+          <h4>Avoid Overtraining</h4>
+          <p>Signs of overtraining: fatigue, poor sleep, declining performance. Listen to your body. Consistent moderate
+            training beats sporadic intense training.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     NUTRITION & DIET SECTION
+     ============================================ -->
+  <section class="section-full nutrition-section">
+    <div class="section">
+      <h2 class="section-title reveal">Nutrition & Diet Guide</h2>
+      <p class="section-subtitle reveal">Fuel your body right for maximum results</p>
+
+      <div class="nutrition-grid">
+        <div class="nutrition-side">
+          <h3>🕐 Sample Meal Plan</h3>
+          <div class="meal-timeline">
+            <div class="meal-item">
+              <div class="meal-time">6:00 AM – Pre-Workout</div>
+              <div class="meal-name">Banana + Black Coffee</div>
+              <div class="meal-desc">Quick energy boost, ~150 cal. Banana provides fast carbs, coffee enhances focus and
+                performance.</div>
+            </div>
+            <div class="meal-item">
+              <div class="meal-time">8:00 AM – Post-Workout Breakfast</div>
+              <div class="meal-name">Eggs + Oats + Milk</div>
+              <div class="meal-desc">4 boiled eggs, 1 bowl oats, 1 glass milk. ~600 cal, ~35g protein, ~60g carbs.</div>
+            </div>
+            <div class="meal-item">
+              <div class="meal-time">11:00 AM – Mid-Morning Snack</div>
+              <div class="meal-name">Nuts + Fruits</div>
+              <div class="meal-desc">Mixed nuts (almonds, walnuts) + seasonal fruit. Healthy fats + vitamins, ~200 cal.
+              </div>
+            </div>
+            <div class="meal-item">
+              <div class="meal-time">1:00 PM – Lunch</div>
+              <div class="meal-name">Dal + Rice + Chicken/Paneer + Salad</div>
+              <div class="meal-desc">Balanced Indian meal. ~800 cal, ~40g protein. Add ghee for healthy fats.</div>
+            </div>
+            <div class="meal-item">
+              <div class="meal-time">4:00 PM – Evening Snack</div>
+              <div class="meal-name">Protein Shake + Banana</div>
+              <div class="meal-desc">1 scoop whey protein + 1 banana. Pre-afternoon workout fuel, ~300 cal.</div>
+            </div>
+            <div class="meal-item">
+              <div class="meal-time">8:00 PM – Dinner</div>
+              <div class="meal-name">Roti + Sabzi + Curd</div>
+              <div class="meal-desc">3 rotis, mixed vegetables, 1 bowl curd. Light, high protein dinner, ~600 cal.</div>
+            </div>
+            <div class="meal-item">
+              <div class="meal-time">10:00 PM – Before Bed</div>
+              <div class="meal-name">Casein Protein / Warm Milk</div>
+              <div class="meal-desc">Slow-digesting protein for overnight muscle repair. 1 glass warm milk with
+                turmeric.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nutrition-side">
+          <h3>📊 Macro Distribution</h3>
+          <div class="macro-bars reveal" style="margin-bottom:2rem;">
+            <div class="macro-item">
+              <label>Protein <span>30%</span></label>
+              <div class="macro-bar">
+                <div class="macro-fill" style="width:30%"></div>
+              </div>
+            </div>
+            <div class="macro-item">
+              <label>Carbohydrates <span>45%</span></label>
+              <div class="macro-bar">
+                <div class="macro-fill" style="width:45%"></div>
+              </div>
+            </div>
+            <div class="macro-item">
+              <label>Healthy Fats <span>25%</span></label>
+              <div class="macro-bar">
+                <div class="macro-fill" style="width:25%"></div>
+              </div>
+            </div>
+            <div class="macro-item">
+              <label>Fiber <span>Daily: 25–30g</span></label>
+              <div class="macro-bar">
+                <div class="macro-fill" style="width:60%"></div>
+              </div>
+            </div>
+          </div>
+
+          <h3 style="margin-bottom:1rem;">💡 Nutrition Rules</h3>
+          <div class="know-card" style="margin-bottom:1rem;">
+            <h4>🥚 Best Protein Sources in India</h4>
+            <p>Eggs, chicken breast, paneer, Greek yogurt, dal (lentils), chickpeas, whey protein, tofu, fish (tuna,
+              salmon). Aim for 20–30g protein per meal.</p>
+          </div>
+          <div class="know-card" style="margin-bottom:1rem;">
+            <h4>🚫 Foods to Limit</h4>
+            <p>Refined sugar, white bread, fried foods, packaged junk food, excessive alcohol, sugary drinks. These slow
+              recovery and promote fat storage.</p>
+          </div>
+          <div class="know-card">
+            <h4>💊 Supplements (Optional)</h4>
+            <p>Creatine monohydrate, whey protein, vitamin D3, omega-3 fish oil, and magnesium are well-researched and
+              safe. Always consult our trainer before starting.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     BMI CALCULATOR
+     ============================================ -->
+  <section class="section-full bmi-section" id="bmi">
+    <div class="section">
+      <h2 class="section-title reveal">BMI Calculator</h2>
+      <p class="section-subtitle reveal">Know your body mass index and get personalized advice</p>
+
+      <div class="bmi-wrap reveal">
+        <div class="bmi-inputs">
+          <div class="form-group">
+            <label for="bmi-weight">Weight (kg)</label>
+            <input type="number" id="bmi-weight" placeholder="e.g. 70" min="30" max="250" />
+          </div>
+          <div class="form-group">
+            <label for="bmi-height">Height (cm)</label>
+            <input type="number" id="bmi-height" placeholder="e.g. 175" min="100" max="250" />
+          </div>
+        </div>
+        <button class="btn-primary" style="width:100%;justify-content:center;margin-bottom:1.5rem;"
+          onclick="calculateBMI()">Calculate My BMI</button>
+
+        <div class="bmi-result" id="bmiResult">
+          <div
+            style="color:var(--text-muted);font-family:'Rajdhani',sans-serif;font-size:0.85rem;text-transform:uppercase;letter-spacing:1px;">
+            Your BMI Score</div>
+          <div class="bmi-value" id="bmiValue">--</div>
+          <div class="bmi-category" id="bmiCategory">--</div>
+          <div class="bmi-advice" id="bmiAdvice">--</div>
+        </div>
+
+        <div style="margin-top:2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:0.5rem;text-align:center;">
+          <div
+            style="background:rgba(0,200,100,0.1);border:1px solid rgba(0,200,100,0.3);border-radius:8px;padding:0.8rem;">
+            <div style="font-size:0.7rem;color:var(--text-muted);margin-bottom:0.3rem;">UNDERWEIGHT</div>
+            <div style="color:#64c864;font-weight:700;font-family:'Rajdhani',sans-serif;">&lt; 18.5</div>
+          </div>
+          <div
+            style="background:rgba(100,200,100,0.1);border:1px solid rgba(100,200,100,0.3);border-radius:8px;padding:0.8rem;">
+            <div style="font-size:0.7rem;color:var(--text-muted);margin-bottom:0.3rem;">NORMAL</div>
+            <div style="color:#64c864;font-weight:700;font-family:'Rajdhani',sans-serif;">18.5–24.9</div>
+          </div>
+          <div
+            style="background:rgba(255,204,0,0.1);border:1px solid rgba(255,204,0,0.3);border-radius:8px;padding:0.8rem;">
+            <div style="font-size:0.7rem;color:var(--text-muted);margin-bottom:0.3rem;">OVERWEIGHT</div>
+            <div style="color:#ffcc00;font-weight:700;font-family:'Rajdhani',sans-serif;">25–29.9</div>
+          </div>
+          <div
+            style="background:rgba(255,45,85,0.1);border:1px solid rgba(255,45,85,0.3);border-radius:8px;padding:0.8rem;">
+            <div style="font-size:0.7rem;color:var(--text-muted);margin-bottom:0.3rem;">OBESE</div>
+            <div style="color:#ff2d55;font-weight:700;font-family:'Rajdhani',sans-serif;">&gt; 30</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     FEES & MEMBERSHIP SECTION
+     ============================================ -->
+  <section id="fees" style="padding: 6rem 2rem; background: var(--bg-dark);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <h2 class="section-title reveal">Membership Plans</h2>
+      <p class="section-subtitle reveal">Affordable pricing for everyone — no hidden charges</p>
+
+      <div class="fees-grid">
+
+        <!-- 1 MONTH -->
+        <div class="fee-card reveal">
+          <div class="fee-duration">Monthly Plan</div>
+          <div class="fee-price">
+            <span class="currency">₹</span>
+            <span class="amount">999</span>
+            <span class="period">per month</span>
+          </div>
+          <div class="fee-discount">✓ No Lock-in Period</div>
+          <ul class="fee-features">
+            <li><span class="check">✓</span> Full Gym Access</li>
+            <li><span class="check">✓</span> All Equipment</li>
+            <li><span class="check">✓</span> Locker Room Access</li>
+            <li><span class="check">✓</span> Basic Fitness Assessment</li>
+            <li><span class="check">✓</span> Group Classes (2/week)</li>
+            <li><span class="cross" style="color:var(--text-muted)">✗</span> <span
+                style="color:var(--text-muted)">Personal Training</span></li>
+            <li><span class="cross" style="color:var(--text-muted)">✗</span> <span style="color:var(--text-muted)">Diet
+                Plan</span></li>
+          </ul>
+          <a href="#contact" class="btn-enroll-outline">Get Started</a>
+        </div>
+
+        <!-- 3 MONTHS -->
+        <div class="fee-card reveal">
+          <div class="fee-duration">Quarterly Plan</div>
+          <div class="fee-price">
+            <span class="currency">₹</span>
+            <span class="amount">2,699</span>
+            <span class="period">for 3 months (~₹900/mo)</span>
+          </div>
+          <div class="fee-discount">🎯 Save ₹298 vs Monthly</div>
+          <ul class="fee-features">
+            <li><span class="check">✓</span> Full Gym Access</li>
+            <li><span class="check">✓</span> All Equipment</li>
+            <li><span class="check">✓</span> Locker Room Access</li>
+            <li><span class="check">✓</span> Fitness Assessment</li>
+            <li><span class="check">✓</span> Group Classes (Unlimited)</li>
+            <li><span class="check">✓</span> 2 PT Sessions/month</li>
+            <li><span class="cross" style="color:var(--text-muted)">✗</span> <span
+                style="color:var(--text-muted)">Custom Diet Plan</span></li>
+          </ul>
+          <a href="#contact" class="btn-enroll-outline">Get Started</a>
+        </div>
+
+        <!-- 6 MONTHS (FEATURED / POPULAR) -->
+        <div class="fee-card featured reveal">
+          <div class="popular-badge">⭐ Most Popular</div>
+          <div class="fee-duration">Half-Yearly Plan</div>
+          <div class="fee-price">
+            <span class="currency">₹</span>
+            <span class="amount">4,999</span>
+            <span class="period">for 6 months (~₹833/mo)</span>
+          </div>
+          <div class="fee-discount">🔥 Save ₹995 vs Monthly</div>
+          <ul class="fee-features">
+            <li><span class="check">✓</span> Full Gym Access</li>
+            <li><span class="check">✓</span> All Equipment</li>
+            <li><span class="check">✓</span> Locker Room Access</li>
+            <li><span class="check">✓</span> Advanced Assessment</li>
+            <li><span class="check">✓</span> Group Classes (Unlimited)</li>
+            <li><span class="check">✓</span> 4 PT Sessions/month</li>
+            <li><span class="check">✓</span> Custom Diet Plan</li>
+            <li><span class="check">✓</span> Supplement Guidance</li>
+          </ul>
+          <a href="#contact" class="btn-enroll">Join Now 🔥</a>
+        </div>
+
+        <!-- 1 YEAR -->
+        <div class="fee-card reveal">
+          <div class="fee-duration">Annual Plan</div>
+          <div class="fee-price">
+            <span class="currency">₹</span>
+            <span class="amount">8,999</span>
+            <span class="period">for 12 months (~₹750/mo)</span>
+          </div>
+          <div class="fee-discount">💎 Best Value – Save ₹2,989</div>
+          <ul class="fee-features">
+            <li><span class="check">✓</span> Full Gym Access</li>
+            <li><span class="check">✓</span> All Equipment</li>
+            <li><span class="check">✓</span> Locker Room Access</li>
+            <li><span class="check">✓</span> Complete Assessment</li>
+            <li><span class="check">✓</span> Group Classes (Unlimited)</li>
+            <li><span class="check">✓</span> 6 PT Sessions/month</li>
+            <li><span class="check">✓</span> Custom Diet Plan</li>
+            <li><span class="check">✓</span> Supplement Guidance</li>
+            <li><span class="check">✓</span> Free T-shirt + Bottle 🎁</li>
+          </ul>
+          <a href="#contact" class="btn-enroll">Join Annual 💎</a>
+        </div>
+
+      </div>
+
+      <!-- Price comparison note -->
+      <div
+        style="text-align:center;margin-top:3rem;padding:2rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);"
+        class="reveal">
+        <p style="color:var(--text-muted);font-family:'Rajdhani',sans-serif;font-size:1rem;margin-bottom:0.5rem;">All
+          memberships include: AC gym, locker access, basic trainer guidance, water, Wi-Fi</p>
+        <p style="color:var(--primary);font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.1rem;">📞 Call us
+          at <a href="tel:9106725591" style="color:var(--primary);">+91 9106725591</a> for student & couple discounts!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     CLASS SCHEDULE SECTION
+     ============================================ -->
+  <section id="schedule" class="section-full">
+    <div class="section">
+      <h2 class="section-title reveal">Weekly Class Schedule</h2>
+      <p class="section-subtitle reveal">Plan your week with our expert-led group classes</p>
+
+      <div style="overflow-x:auto;">
+        <table class="schedule-table reveal">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+              <th>Saturday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>6:00 AM</strong></td>
+              <td><span class="schedule-type type-strength">Strength</span></td>
+              <td><span class="schedule-type type-cardio">Cardio</span></td>
+              <td><span class="schedule-type type-strength">Strength</span></td>
+              <td><span class="schedule-type type-cardio">Cardio</span></td>
+              <td><span class="schedule-type type-strength">Strength</span></td>
+              <td><span class="schedule-type type-hiit">HIIT</span></td>
+            </tr>
+            <tr>
+              <td><strong>7:00 AM</strong></td>
+              <td><span class="schedule-type type-yoga">Yoga</span></td>
+              <td><span class="schedule-type type-yoga">Yoga</span></td>
+              <td><span class="schedule-type type-yoga">Yoga</span></td>
+              <td><span class="schedule-type type-yoga">Yoga</span></td>
+              <td><span class="schedule-type type-yoga">Yoga</span></td>
+              <td><span class="schedule-type type-yoga">Yoga</span></td>
+            </tr>
+            <tr>
+              <td><strong>9:00 AM</strong></td>
+              <td><span class="schedule-type type-hiit">HIIT</span></td>
+              <td>Open Gym</td>
+              <td><span class="schedule-type type-hiit">HIIT</span></td>
+              <td>Open Gym</td>
+              <td><span class="schedule-type type-hiit">HIIT</span></td>
+              <td><span class="schedule-type type-cardio">Cardio</span></td>
+            </tr>
+            <tr>
+              <td><strong>5:00 PM</strong></td>
+              <td><span class="schedule-type type-cardio">Cardio</span></td>
+              <td><span class="schedule-type type-strength">Strength</span></td>
+              <td><span class="schedule-type type-zumba">Zumba</span></td>
+              <td><span class="schedule-type type-strength">Strength</span></td>
+              <td><span class="schedule-type type-cardio">Cardio</span></td>
+              <td>Open Gym</td>
+            </tr>
+            <tr>
+              <td><strong>6:30 PM</strong></td>
+              <td><span class="schedule-type type-zumba">Zumba</span></td>
+              <td><span class="schedule-type type-hiit">HIIT</span></td>
+              <td><span class="schedule-type type-strength">Strength</span></td>
+              <td><span class="schedule-type type-hiit">HIIT</span></td>
+              <td><span class="schedule-type type-zumba">Zumba</span></td>
+              <td><span class="schedule-type type-hiit">HIIT</span></td>
+            </tr>
+            <tr>
+              <td><strong>8:00 PM</strong></td>
+              <td><span class="schedule-type type-yoga">Yoga</span></td>
+              <td><span class="schedule-type type-yoga">Yoga</span></td>
+              <td><span class="schedule-type type-yoga">Yoga</span></td>
+              <td><span class="schedule-type type-yoga">Yoga</span></td>
+              <td><span class="schedule-type type-yoga">Yoga</span></td>
+              <td><span class="schedule-type type-cardio">Cardio</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-top:2rem;" class="reveal">
+        <span><span class="schedule-type type-strength">Strength</span></span>
+        <span><span class="schedule-type type-cardio">Cardio</span></span>
+        <span><span class="schedule-type type-hiit">HIIT</span></span>
+        <span><span class="schedule-type type-yoga">Yoga</span></span>
+        <span><span class="schedule-type type-zumba">Zumba</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     TRAINERS SECTION
+     ============================================ -->
+  <section id="trainers" style="padding:6rem 2rem;background:var(--bg-card);">
+    <div style="max-width:1200px;margin:0 auto;">
+      <h2 class="section-title reveal">Meet Our Trainers</h2>
+      <p class="section-subtitle reveal">Certified experts dedicated to your success</p>
+
+      <div class="trainers-grid">
+        <div class="trainer-card reveal">
+          <div class="trainer-avatar-wrap">
+            <div class="trainer-initials">DP</div>
+          </div>
+          <div class="trainer-info">
+            <h4>Dhrumil Pandya</h4>
+            <div class="trainer-specialty">Owner & Head Trainer</div>
+            <p>Certified fitness professional with 8+ years of experience in strength training, bodybuilding, and
+              personal coaching.</p>
+          </div>
+        </div>
+        <div class="trainer-card reveal">
+          <div class="trainer-avatar-wrap">
+            <div class="trainer-initials">RK</div>
+          </div>
+          <div class="trainer-info">
+            <h4>Rahul Kadam</h4>
+            <div class="trainer-specialty">Cardio & HIIT Specialist</div>
+            <p>5+ years experience in high-intensity interval training, weight loss programs, and cardiovascular
+              conditioning.</p>
+          </div>
+        </div>
+        <div class="trainer-card reveal">
+          <div class="trainer-avatar-wrap">
+            <div class="trainer-initials">PS</div>
+          </div>
+          <div class="trainer-info">
+            <h4>Priya Shah</h4>
+            <div class="trainer-specialty">Yoga & Zumba Trainer</div>
+            <p>Certified yoga instructor and Zumba choreographer with 6+ years experience in group fitness and
+              mindfulness coaching.</p>
+          </div>
+        </div>
+        <div class="trainer-card reveal">
+          <div class="trainer-avatar-wrap">
+            <div class="trainer-initials">AJ</div>
+          </div>
+          <div class="trainer-info">
+            <h4>Amit Joshi</h4>
+            <div class="trainer-specialty">Nutrition & Wellness Coach</div>
+            <p>Certified nutritionist specializing in sports nutrition, diet planning, and supplement guidance for all
+              fitness goals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     GALLERY SECTION
+     ============================================ -->
+  <section id="gallery" style="padding: 6rem 2rem; background: var(--bg-dark);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <h2 class="section-title reveal">Gym Gallery</h2>
+      <p class="section-subtitle reveal">Explore our premium facilities and workout spaces</p>
+
+      <!-- Gallery Filter Tabs -->
+      <div class="gallery-tabs reveal">
+        <button class="gallery-tab active" onclick="filterGallery('all')">All Area</button>
+        <button class="gallery-tab" onclick="filterGallery('cardio')">Cardio Section</button>
+        <button class="gallery-tab" onclick="filterGallery('legs')">Leg Section</button>
+        <button class="gallery-tab" onclick="filterGallery('zumba')">Zumba Section</button>
+        <button class="gallery-tab" onclick="filterGallery('dumbbells')">Dumbbell Section</button>
+        <button class="gallery-tab" onclick="filterGallery('machines')">Machine Area</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid reveal">
+        <!-- Cardio Section -->
+        <div class="gallery-item show" data-category="cardio" onclick="openLightbox(0)">
+          <div class="gallery-img-wrapper">
+            <img src="images/cardio_zone.png" alt="Cardio Zone" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-category">Cardio Section</span>
+              <h4>High-Tech Treadmills & Bikes</h4>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leg Section -->
+        <div class="gallery-item show" data-category="legs" onclick="openLightbox(1)">
+          <div class="gallery-img-wrapper">
+            <img src="images/leg_section.png" alt="Leg Workout Section" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-category">Leg Section</span>
+              <h4>Squat Racks & Heavy Presses</h4>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zumba Section -->
+        <div class="gallery-item show" data-category="zumba" onclick="openLightbox(2)">
+          <div class="gallery-img-wrapper">
+            <img src="images/zumba_studio.png" alt="Zumba & Group Fitness Studio" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-category">Zumba Section</span>
+              <h4>Vibrant Studio & Group Classes</h4>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dumbbell Section -->
+        <div class="gallery-item show" data-category="dumbbells" onclick="openLightbox(3)">
+          <div class="gallery-img-wrapper">
+            <img src="images/dumbbell_area.png" alt="Dumbbell & Free Weights Section" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-category">Dumbbell Section</span>
+              <h4>Heavy Dumbbells & Strength Benches</h4>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Machine Area -->
+        <div class="gallery-item show" data-category="machines" onclick="openLightbox(4)">
+          <div class="gallery-img-wrapper">
+            <img src="images/machine_area.png" alt="Selectorized Gym Machines Area" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-category">Machine Area</span>
+              <h4>Cable Crosses & Strength Equipment</h4>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Lightbox Modal -->
+  <div id="galleryLightbox" class="lightbox">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <div class="lightbox-content">
+      <div class="lightbox-slide">
+        <img id="lightboxImg" src="" alt="Enlarged Gym View" />
+        <div id="lightboxCaption" class="lightbox-caption">Caption Text</div>
+      </div>
+      <a class="lightbox-prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="lightbox-next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+  </div>
+
+  <!-- ============================================
+     TESTIMONIALS
+     ============================================ -->
+  <section class="section-full testimonials-section">
+    <div class="section">
+      <h2 class="section-title reveal">Member Success Stories</h2>
+      <p class="section-subtitle reveal">Real results from real Fitness One members</p>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">Fitness One completely transformed my life. I lost 22 kg in 8 months with their
+            expert guidance. Dhrumil sir's personalized approach is incredible!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">VT</div>
+            <div>
+              <div class="author-name">Vikas Trivedi</div>
+              <div class="author-detail">Lost 22 kg | Member for 1 year</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">The gym atmosphere is electric! The trainers really push you in the best way
+            possible. Best gym in Vadodara without question. Highly recommend!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">NP</div>
+            <div>
+              <div class="author-name">Nisha Patel</div>
+              <div class="author-detail">Toned & Fit | Member for 6 months</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">As a student, the pricing is very affordable. The equipment is top-notch and the
+            trainers are always available to help. Excellent experience overall!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">KS</div>
+            <div>
+              <div class="author-name">Kiran Sharma</div>
+              <div class="author-detail">Gained 8 kg Muscle | Member for 8 months</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">The yoga and Zumba classes are fabulous! Priya ma'am is so energetic and
+            motivating. This gym has completely changed my daily routine for the better.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MD</div>
+            <div>
+              <div class="author-name">Meera Desai</div>
+              <div class="author-detail">Yoga & Zumba Member | 1 year</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     CONTACT SECTION
+     ============================================ -->
+  <section id="contact" style="padding:6rem 2rem;background:var(--bg-dark);">
+    <div style="max-width:1200px;margin:0 auto;">
+      <h2 class="section-title reveal">Get In Touch</h2>
+      <p class="section-subtitle reveal">Ready to start your fitness journey? Reach out to us!</p>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3>Visit Us Today</h3>
+          <p>We're located in the heart of Makarpura, Vadodara. Come visit us for a free trial session and gym tour. Our
+            friendly staff is always ready to help you begin your fitness journey.</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div>
+                <strong>Address</strong>
+                <span>Makarpura, Vadodara, Gujarat – 390014</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📞</div>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:9106725591"><span>+91 9106725591</span></a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">✉️</div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:dhrumilpandya09@gmail.com"><span>dhrumilpandya09@gmail.com</span></a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">🕐</div>
+              <div>
+                <strong>Mon – Sat</strong>
+                <span>5:00 AM – 10:00 PM</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">🕐</div>
+              <div>
+                <strong>Sunday</strong>
+                <span>6:00 AM – 8:00 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="contact-form">
+            <h3>📝 Enquiry / Enroll Now</h3>
+
+            <div class="form-group">
+              <label for="fname">Full Name</label>
+              <input type="text" id="fname" placeholder="Enter your full name" />
+            </div>
+            <div class="form-group">
+              <label for="fphone">Phone Number</label>
+              <input type="tel" id="fphone" placeholder="+91 XXXXX XXXXX" />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address</label>
+              <input type="email" id="femail" placeholder="your@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="fplan">Select Plan</label>
+              <select id="fplan">
+                <option value="">-- Choose a plan --</option>
+                <option value="1month">1 Month – ₹999</option>
+                <option value="3month">3 Months – ₹2,699</option>
+                <option value="6month">6 Months – ₹4,999 (Most Popular)</option>
+                <option value="1year">1 Year – ₹8,999 (Best Value)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fgoal">Your Fitness Goal</label>
+              <select id="fgoal">
+                <option value="">-- Select goal --</option>
+                <option>Weight Loss</option>
+                <option>Muscle Building</option>
+                <option>General Fitness</option>
+                <option>Strength Training</option>
+                <option>Cardio & Endurance</option>
+                <option>Flexibility & Yoga</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fmsg">Message (Optional)</label>
+              <textarea id="fmsg" placeholder="Any questions or special requests..."></textarea>
+            </div>
+            <button id="submit-btn" class="btn-primary" style="width:100%;justify-content:center;" onclick="submitForm()">
+              🚀 Send Enquiry
+            </button>
+            <div id="form-status" style="display: none; margin-top: 15px; padding: 12px; border-radius: 8px; font-size: 0.9rem; text-align: center; font-family: 'Rajdhani', sans-serif; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s ease;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     FOOTER
+     ============================================ -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-text">FITNESS <span style="color:var(--primary)">ONE</span></span>
+        <p>Vadodara's premier fitness destination located in Makarpura. Transform your body, elevate your mind, and
+          become the best version of yourself.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn" title="Instagram">📸</a>
+          <a href="#" class="social-btn" title="Facebook">📘</a>
+          <a href="#" class="social-btn" title="YouTube">▶️</a>
+          <a href="https://wa.me/919106725591" class="social-btn" title="WhatsApp">💬</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#workouts">Workouts</a></li>
+          <li><a href="#muscle-guide">Exercise Library</a></li>
+          <li><a href="#knowledge">Gym Tips</a></li>
+          <li><a href="#fees">Membership</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Our Services</h5>
+        <ul>
+          <li><a href="#">Personal Training</a></li>
+          <li><a href="#">Group Classes</a></li>
+          <li><a href="#">Yoga Sessions</a></li>
+          <li><a href="#">Zumba Classes</a></li>
+          <li><a href="#">HIIT Training</a></li>
+          <li><a href="#">Diet Consultation</a></li>
+          <li><a href="#">Body Analysis</a></li>
+          <li><a href="#">Cardio Zone</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact Info</h5>
+        <ul>
+          <li><a href="#">📍 Makarpura, Vadodara</a></li>
+          <li><a href="tel:9106725591">📞 +91 9106725591</a></li>
+          <li><a href="mailto:dhrumilpandya09@gmail.com">✉️ dhrumilpandya09@gmail.com</a></li>
+          <li><a href="#">🕐 Mon–Sat: 5AM–10PM</a></li>
+          <li><a href="#">🕐 Sunday: 6AM–8PM</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 <span>Fitness One</span> — Makarpura, Vadodara. All rights reserved.</p>
+      <p>Owner: <span>Dhrumil Pandya</span> | Designed with 💪 for fitness lovers</p>
+    </div>
+  </footer>
+
+  <!-- ============================================
+     JAVASCRIPT
+     ============================================ -->
+  <script>
+    // ---- SCROLL PROGRESS BAR ----
+    window.addEventListener('scroll', () => {
+      const scrollTop = document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const progress = (scrollTop / scrollHeight) * 100;
+      document.getElementById('progressBar').style.width = progress + '%';
+
+      // Navbar scroll effect
+      const navbar = document.getElementById('navbar');
+      if (scrollTop > 50) navbar.classList.add('scrolled');
+      else navbar.classList.remove('scrolled');
+    });
+
+    // ---- REVEAL ON SCROLL ----
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // ---- MOBILE NAV ----
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('mobileNav').classList.add('open');
+    });
+    document.getElementById('mobileClose').addEventListener('click', () => {
+      document.getElementById('mobileNav').classList.remove('open');
+    });
+
+    function closeMobileNav() {
+      document.getElementById('mobileNav').classList.remove('open');
+    }
+
+    // ---- MUSCLE GROUP TABS ----
+    function showMuscle(group) {
+      // Hide all content
+      document.querySelectorAll('.muscle-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.muscle-tab').forEach(el => el.classList.remove('active'));
+
+      // Show selected
+      document.getElementById('muscle-' + group).classList.add('active');
+      event.target.classList.add('active');
+    }
+
+    // ---- BMI CALCULATOR ----
+    function calculateBMI() {
+      const weight = parseFloat(document.getElementById('bmi-weight').value);
+      const height = parseFloat(document.getElementById('bmi-height').value) / 100;
+
+      if (!weight || !height || weight < 30 || height < 1) {
+        alert('Please enter valid weight and height values.');
+        return;
+      }
+
+      const bmi = (weight / (height * height)).toFixed(1);
+      const result = document.getElementById('bmiResult');
+      const valueEl = document.getElementById('bmiValue');
+      const catEl = document.getElementById('bmiCategory');
+      const advEl = document.getElementById('bmiAdvice');
+
+      valueEl.textContent = bmi;
+      result.classList.add('show');
+
+      if (bmi < 18.5) {
+        catEl.textContent = 'Underweight';
+        catEl.style.color = '#64c864';
+        advEl.textContent = 'Focus on calorie surplus, strength training, and protein-rich diet to gain healthy weight.';
+      } else if (bmi < 25) {
+        catEl.textContent = 'Normal Weight ✓';
+        catEl.style.color = '#64c864';
+        advEl.textContent = 'Excellent! Maintain your current lifestyle with balanced nutrition and regular exercise.';
+      } else if (bmi < 30) {
+        catEl.textContent = 'Overweight';
+        catEl.style.color = '#ffcc00';
+        advEl.textContent = 'Consider increasing cardio workouts and reviewing your diet. A trainer can help create a personalized plan.';
+      } else {
+        catEl.textContent = 'Obese';
+        catEl.style.color = '#ff2d55';
+        advEl.textContent = 'Please consult our trainer and nutritionist for a medically guided fitness plan. You can achieve your goals!';
+      }
+
+      result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    // ---- CONTACT FORM ----
+    function showStatus(message, type) {
+      const statusDiv = document.getElementById('form-status');
+      statusDiv.innerText = message;
+      statusDiv.style.display = 'block';
+      
+      if (type === 'success') {
+        statusDiv.style.backgroundColor = 'rgba(0, 255, 100, 0.1)';
+        statusDiv.style.border = '1px solid #00ff64';
+        statusDiv.style.color = '#00ff64';
+        statusDiv.style.boxShadow = '0 0 15px rgba(0, 255, 100, 0.2)';
+      } else if (type === 'error') {
+        statusDiv.style.backgroundColor = 'rgba(255, 45, 85, 0.1)';
+        statusDiv.style.border = '1px solid #ff2d55';
+        statusDiv.style.color = '#ff2d55';
+        statusDiv.style.boxShadow = '0 0 15px rgba(255, 45, 85, 0.2)';
+      } else if (type === 'loading') {
+        statusDiv.style.backgroundColor = 'rgba(255, 107, 0, 0.1)';
+        statusDiv.style.border = '1px solid #ff6b00';
+        statusDiv.style.color = '#ff6b00';
+        statusDiv.style.boxShadow = '0 0 15px rgba(255, 107, 0, 0.2)';
+      }
+    }
+
+    async function submitForm() {
+      const name = document.getElementById('fname').value.trim();
+      const phone = document.getElementById('fphone').value.trim();
+      const email = document.getElementById('femail').value.trim();
+      const plan = document.getElementById('fplan').value;
+      const goal = document.getElementById('fgoal').value;
+      const message = document.getElementById('fmsg').value.trim();
+
+      if (!name || !phone || !email || !plan) {
+        showStatus('Please fill in Name, Phone, Email, and select a Plan.', 'error');
+        return;
+      }
+
+      // Basic email pattern check
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        showStatus('Please enter a valid email address.', 'error');
+        return;
+      }
+
+      const submitBtn = document.getElementById('submit-btn');
+      
+      // Update UI state to loading
+      submitBtn.disabled = true;
+      submitBtn.innerText = '⏳ Sending Enquiry...';
+      showStatus('Sending your enquiry, please wait...', 'loading');
+
+      try {
+        const response = await fetch('/api/enquiry', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ name, phone, email, plan, goal, message })
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          showStatus(`✅ Success! Enquiry sent. Check email: ${email}`, 'success');
+          
+          // Clear form
+          document.getElementById('fname').value = '';
+          document.getElementById('fphone').value = '';
+          document.getElementById('femail').value = '';
+          document.getElementById('fplan').value = '';
+          document.getElementById('fgoal').value = '';
+          document.getElementById('fmsg').value = '';
+        } else {
+          showStatus(`❌ Error: ${data.error || 'Failed to submit enquiry.'}`, 'error');
+        }
+      } catch (err) {
+        console.error('Submission error:', err);
+        showStatus('❌ Connection error. Is the backend server running?', 'error');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerText = '🚀 Send Enquiry';
+      }
+    }
+
+    // ---- PARTICLES ----
+    function createParticles() {
+      const container = document.getElementById('particles');
+      if (!container) return;
+
+      for (let i = 0; i < 20; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDuration = (8 + Math.random() * 12) + 's';
+        particle.style.animationDelay = (Math.random() * 10) + 's';
+        particle.style.width = (2 + Math.random() * 4) + 'px';
+        particle.style.height = particle.style.width;
+        container.appendChild(particle);
+      }
+    }
+
+    createParticles();
+
+    // ---- GALLERY FILTERING ----
+    function filterGallery(category) {
+      // Toggle active class on tab buttons
+      const tabs = document.querySelectorAll('.gallery-tab');
+      tabs.forEach(tab => {
+        // Match the target category or check if it's the 'all' option
+        const tabText = tab.textContent.toLowerCase();
+        if (
+          (category === 'all' && tabText.includes('all')) ||
+          (category !== 'all' && tabText.includes(category))
+        ) {
+          tab.classList.add('active');
+        } else {
+          tab.classList.remove('active');
+        }
+      });
+
+      // Show/Hide images
+      const items = document.querySelectorAll('.gallery-item');
+      items.forEach(item => {
+        const itemCat = item.getAttribute('data-category');
+        if (category === 'all' || itemCat === category) {
+          item.classList.add('show');
+        } else {
+          item.classList.remove('show');
+        }
+      });
+    }
+
+    // ---- LIGHTBOX SYSTEM ----
+    let currentSlideIndex = 0;
+    const galleryImages = [
+      { src: 'images/cardio_zone.png', caption: 'Cardio Section - High-Tech Treadmills & Bikes' },
+      { src: 'images/leg_section.png', caption: 'Leg Section - Squat Racks & Heavy Presses' },
+      { src: 'images/zumba_studio.png', caption: 'Zumba Section - Vibrant Studio & Group Classes' },
+      { src: 'images/dumbbell_area.png', caption: 'Dumbbell Section - Heavy Dumbbells & Strength Benches' },
+      { src: 'images/machine_area.png', caption: 'Machine Area - Cable Crosses & Strength Equipment' }
+    ];
+
+    function openLightbox(index) {
+      currentSlideIndex = index;
+      const lightbox = document.getElementById('galleryLightbox');
+      const img = document.getElementById('lightboxImg');
+      const caption = document.getElementById('lightboxCaption');
+      
+      img.src = galleryImages[currentSlideIndex].src;
+      caption.textContent = galleryImages[currentSlideIndex].caption;
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden'; // Stop background scrolling
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('galleryLightbox');
+      lightbox.classList.remove('active');
+      document.body.style.overflow = 'auto'; // Enable scrolling
+    }
+
+    function changeSlide(direction) {
+      currentSlideIndex += direction;
+      if (currentSlideIndex >= galleryImages.length) {
+        currentSlideIndex = 0;
+      } else if (currentSlideIndex < 0) {
+        currentSlideIndex = galleryImages.length - 1;
+      }
+      
+      const img = document.getElementById('lightboxImg');
+      const caption = document.getElementById('lightboxCaption');
+      img.src = galleryImages[currentSlideIndex].src;
+      caption.textContent = galleryImages[currentSlideIndex].caption;
+    }
+
+    // Close lightbox on escape key or outside click
+    document.getElementById('galleryLightbox').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      const lightbox = document.getElementById('galleryLightbox');
+      if (lightbox.classList.contains('active')) {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') changeSlide(1);
+        if (e.key === 'ArrowLeft') changeSlide(-1);
+      }
+    });
+
+    // ---- SMOOTH SCROLL ----
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
